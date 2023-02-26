@@ -1,7 +1,7 @@
 <template>
   <section id="queueWrapper">
     <ScreenHeader :layout="songs.length === 0 ? 'collapsed' : headerLayout">
-      Current Queue
+      正在播放……
       <ControlsToggle v-model="showingControls" />
 
       <template #thumbnail>
@@ -39,10 +39,10 @@
         <icon :icon="faCoffee" />
       </template>
 
-      No songs queued.
+      妹在播放歌欸
       <span v-if="libraryNotEmpty" class="d-block secondary">
-        How about
-        <a class="start" @click.prevent="shuffleSome">playing some random songs</a>?
+        不如
+        <a class="start" @click.prevent="shuffleSome">随便来一首</a>?
       </span>
     </ScreenEmptyState>
   </section>

@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="submit" @keydown.esc="maybeClose">
     <header>
-      <h1>Rename Playlist Folder</h1>
+      <h1>重命名歌单</h1>
     </header>
 
     <main>
@@ -10,17 +10,17 @@
           v-model="name"
           v-koel-focus
           name="name"
-          placeholder="Folder name"
+          placeholder="歌单名称"
           required
-          title="Folder name"
+          title="歌单名称"
           type="text"
         >
       </div>
     </main>
 
     <footer>
-      <Btn type="submit">Save</Btn>
-      <Btn white @click.prevent="maybeClose">Cancel</Btn>
+      <Btn type="submit">保存</Btn>
+      <Btn white @click.prevent="maybeClose">取消</Btn>
     </footer>
   </form>
 </template>

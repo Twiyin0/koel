@@ -29,7 +29,7 @@
           type="button"
           @click.prevent="currentTab = 'details'"
         >
-          Details
+          详情
         </button>
         <button
           v-if="editingOnlyOneSong"
@@ -41,7 +41,7 @@
           type="button"
           @click.prevent="currentTab = 'lyrics'"
         >
-          Lyrics
+          歌词
         </button>
       </div>
 
@@ -69,7 +69,7 @@
 
           <div class="form-row cols">
             <label>
-              Artist
+              艺术家
               <input
                 v-model="formData.artist_name"
                 :placeholder="inputPlaceholder"
@@ -79,7 +79,7 @@
               >
             </label>
             <label>
-              Album Artist
+              专辑艺术家
               <input
                 v-model="formData.album_artist_name"
                 :placeholder="inputPlaceholder"
@@ -92,7 +92,7 @@
 
           <div class="form-row">
             <label>
-              Album
+              专辑
               <input
                 v-model="formData.album_name"
                 :placeholder="inputPlaceholder"
@@ -116,7 +116,7 @@
               >
             </label>
             <label>
-              Disc
+              碟片
               <input
                 v-model="formData.disc"
                 :placeholder="inputPlaceholder"
@@ -130,7 +130,7 @@
 
           <div class="form-row cols">
             <label>
-              Genre
+              流派
               <input
                 v-model="formData.genre"
                 :placeholder="inputPlaceholder"
@@ -144,7 +144,7 @@
               </datalist>
             </label>
             <label>
-              Year
+              年份
               <input
                 v-model="formData.year"
                 :placeholder="inputPlaceholder"
@@ -170,7 +170,7 @@
               v-koel-focus
               data-testid="lyrics-input"
               name="lyrics"
-              title="Lyrics"
+              title="歌词"
             />
           </div>
         </div>

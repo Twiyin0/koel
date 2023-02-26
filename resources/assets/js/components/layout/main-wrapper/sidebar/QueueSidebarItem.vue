@@ -8,7 +8,7 @@
     @dragover.prevent="onQueueDragOver"
     @drop="onQueueDrop"
   >
-    Current Queue
+    当前播放
   </SidebarItem>
 </template>
 

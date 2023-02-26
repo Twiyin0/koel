@@ -13,7 +13,7 @@
     </template>
     <template #meta>
       <a
-        :title="`Shuffle all songs by ${artist.name}`"
+        :title="`随机播放${artist.name}的歌曲`"
         class="shuffle-artist"
         role="button"
         @click.prevent="shuffle"
@@ -22,12 +22,12 @@
       </a>
       <a
         v-if="allowDownload"
-        :title="`Download all songs by ${artist.name}`"
+        :title="`下载${artist.name}的所有歌曲`"
         class="download-artist"
         role="button"
         @click.prevent="download"
       >
-        Download
+        下载
       </a>
     </template>
   </ArtistAlbumCard>

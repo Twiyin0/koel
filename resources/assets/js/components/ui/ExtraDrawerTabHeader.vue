@@ -3,7 +3,7 @@
     id="extraTabLyrics"
     v-koel-tooltip.left
     :class="{ active: value === 'Lyrics' }"
-    title="Lyrics"
+    title="歌词"
     type="button"
     @click.prevent="toggleTab('Lyrics')"
   >
@@ -13,7 +13,7 @@
     id="extraTabArtist"
     v-koel-tooltip.left
     :class="{ active: value === 'Artist' }"
-    title="Artist information"
+    title="艺术家信息"
     type="button"
     @click.prevent="toggleTab('Artist')"
   >
@@ -23,7 +23,7 @@
     id="extraTabAlbum"
     v-koel-tooltip.left
     :class="{ active: value === 'Album' }"
-    title="Album information"
+    title="专辑信息"
     type="button"
     @click.prevent="toggleTab('Album')"
   >

@@ -1,7 +1,7 @@
 <template>
   <section class="recent">
     <h1>
-      Recently Played
+      最近播放
       <Btn
         v-if="songs.length"
         orange
@@ -9,7 +9,7 @@
         small
         @click.prevent="goToRecentlyPlayedScreen"
       >
-        View All
+        查看所有
       </Btn>
     </h1>
 
@@ -24,7 +24,7 @@
           <SongCard :song="song" />
         </li>
       </ol>
-      <p v-else class="text-secondary">No songs played as of late.</p>
+      <p v-else class="text-secondary">这里妹有歌歌</p>
     </template>
   </section>
 </template>

@@ -7,9 +7,9 @@
         <template #icon>
           <icon :icon="faVolumeOff" />
         </template>
-        {"这里妹有歌欸"}
+        这里妹有歌歌欸.
         <span class="secondary d-block">
-          {{ isAdmin ? 'Have you set up your library yet?' : 'Contact your administrator to set up your library.' }}
+          {{ isAdmin ? '有好好检查音乐库路径嘛~' : '可以叫管理检查音乐库哦~' }}
         </span>
       </ScreenEmptyState>
 

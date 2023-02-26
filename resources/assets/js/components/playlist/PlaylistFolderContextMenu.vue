@@ -2,15 +2,15 @@
   <ContextMenuBase ref="base">
     <template v-if="folder">
       <template v-if="playable">
-        <li @click="play">Play All</li>
-        <li @click="shuffle">Shuffle All</li>
+        <li @click="play">播放所有</li>
+        <li @click="shuffle">随机播放</li>
         <li class="separator" />
       </template>
-      <li @click="createPlaylist">New Playlist…</li>
-      <li @click="createSmartPlaylist">New Smart Playlist…</li>
+      <li @click="createPlaylist">新建歌单</li>
+      <li @click="createSmartPlaylist">新建智能歌单</li>
       <li class="separator" />
-      <li @click="rename">Rename</li>
-      <li @click="destroy">Delete</li>
+      <li @click="rename">重命名</li>
+      <li @click="destroy">删掉惹！</li>
     </template>
   </ContextMenuBase>
 </template>

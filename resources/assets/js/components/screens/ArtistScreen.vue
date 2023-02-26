@@ -19,10 +19,10 @@
           v-if="allowDownload"
           class="download"
           role="button"
-          title="Download all songs by this artist"
+          title="下载ta的所有歌曲"
           @click.prevent="download"
         >
-          Download All
+          下载所有
         </a>
       </template>
 

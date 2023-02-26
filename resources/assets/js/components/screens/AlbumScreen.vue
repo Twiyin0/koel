@@ -20,10 +20,10 @@
           v-if="allowDownload"
           class="download"
           role="button"
-          title="Download all songs in album"
+          title="下载专辑里所有歌曲"
           @click.prevent="download"
         >
-          Download All
+          下载所有
         </a>
       </template>
 

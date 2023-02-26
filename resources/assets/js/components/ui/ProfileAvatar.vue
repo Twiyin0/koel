@@ -4,7 +4,7 @@
     class="view-profile"
     data-testid="view-profile-link"
     href="/#/profile"
-    title="Profile and preferences"
+    title="个人偏好"
   >
     <img :alt="`Avatar of ${currentUser.name}`" :src="currentUser.avatar">
   </a>

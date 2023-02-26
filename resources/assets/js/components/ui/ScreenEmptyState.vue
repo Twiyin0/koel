@@ -5,7 +5,7 @@
         <slot name="icon">☕️</slot>
       </span>
       <div class="text">
-        <slot>Placeholder text goes here.</slot>
+        <slot>这里放占位符</slot>
       </div>
     </div>
   </div>

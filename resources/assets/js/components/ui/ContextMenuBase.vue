@@ -12,7 +12,7 @@
     @keydown.esc="close"
   >
     <ul>
-      <slot>Menu items go here.</slot>
+      <slot>这里是菜单~</slot>
     </ul>
   </nav>
 </template>

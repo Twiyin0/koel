@@ -1,7 +1,7 @@
 <template>
   <section id="favoritesWrapper">
     <ScreenHeader :layout="songs.length === 0 ? 'collapsed' : headerLayout">
-      Songs You Love
+      喜欢的歌哦
       <ControlsToggle v-model="showingControls" />
 
       <template #thumbnail>
@@ -16,10 +16,10 @@
           v-if="allowDownload"
           class="download"
           role="button"
-          title="Download all songs in playlist"
+          title="下载歌单里所有歌曲"
           @click.prevent="download"
         >
-          Download All
+          下载所有
         </a>
       </template>
 
@@ -47,11 +47,11 @@
       <template #icon>
         <icon :icon="faHeartBroken" />
       </template>
-      No favorites yet.
+      妹有喜欢的歌欸……
       <span class="secondary d-block">
-        Click the&nbsp;
+        点击&nbsp;
         <icon :icon="faHeart" />&nbsp;
-        icon to mark a song as favorite.
+        图标添加喜欢的歌~
       </span>
     </ScreenEmptyState>
   </section>

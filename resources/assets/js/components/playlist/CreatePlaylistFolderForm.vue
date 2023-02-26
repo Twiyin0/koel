@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="submit" @keydown.esc="maybeClose">
     <header>
-      <h1>New Playlist Folder</h1>
+      <h1>新的歌单</h1>
     </header>
 
     <main>
@@ -10,7 +10,7 @@
           v-model="name"
           v-koel-focus
           name="name"
-          placeholder="Folder name"
+          placeholder="名称"
           required
           type="text"
         >
@@ -18,8 +18,8 @@
     </main>
 
     <footer>
-      <Btn type="submit">Save</Btn>
-      <Btn white @click.prevent="maybeClose">Cancel</Btn>
+      <Btn type="submit">保存</Btn>
+      <Btn white @click.prevent="maybeClose">取消</Btn>
     </footer>
   </form>
 </template>

@@ -2,7 +2,7 @@
   <label v-if="isMobile.phone" class="text-highlight">
     <input v-model="value" type="checkbox">
     <icon :icon="value ? faCaretUp : faCaretDown" class="toggle" />
-    <span>Toggle the song list controls</span>
+    <span>切换歌曲列表控件</span>
   </label>
 </template>
 

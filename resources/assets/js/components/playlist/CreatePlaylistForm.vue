@@ -2,13 +2,13 @@
   <form @submit.prevent="submit" @keydown.esc="maybeClose">
     <header>
       <h1>
-        New Playlist
+        新建
         <span
           v-if="songs.length"
           data-testid="from-songs"
           class="text-secondary"
         >
-          from {{ pluralize(songs, 'song') }}
+          来自 {{ pluralize(songs, 'song') }} 的歌单
         </span>
       </h1>
     </header>
@@ -16,18 +16,18 @@
     <main>
       <div class="form-row cols">
         <label class="name">
-          Name
+          名称
           <input
             v-model="name"
             v-koel-focus
             name="name"
-            placeholder="Playlist name"
+            placeholder="歌单名称"
             required
             type="text"
           >
         </label>
         <label class="folder">
-          Folder
+          歌单
           <select v-model="folderId">
             <option :value="null" />
             <option v-for="folder in folders" :key="folder.id" :value="folder.id">{{ folder.name }}</option>
@@ -37,8 +37,8 @@
     </main>
 
     <footer>
-      <Btn type="submit">Save</Btn>
-      <Btn white @click.prevent="maybeClose">Cancel</Btn>
+      <Btn type="submit">保存</Btn>
+      <Btn white @click.prevent="maybeClose">取消</Btn>
     </footer>
   </form>
 </template>

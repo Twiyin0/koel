@@ -2,7 +2,7 @@
   <ArtistAlbumCard
     v-if="showing"
     :entity="album"
-    :title="`${album.name} by ${album.artist_name}`"
+    :title="`${album.artist_name}的${album.name}`"
     :layout="layout"
     @contextmenu="requestContextMenu"
     @dblclick="shuffle"
@@ -21,7 +21,7 @@
         role="button"
         @click.prevent="shuffle"
       >
-        Shuffle
+        随机播放
       </a>
       <a
         v-if="allowDownload"
@@ -30,7 +30,7 @@
         role="button"
         @click.prevent="download"
       >
-        Download
+        下载
       </a>
     </template>
   </ArtistAlbumCard>

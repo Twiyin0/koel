@@ -11,7 +11,7 @@
             @click.prevent="playAll"
           >
             <icon :icon="faPlay" fixed-width />
-            All
+            所有
           </Btn>
 
           <Btn
@@ -22,7 +22,7 @@
             @click.prevent="playSelected"
           >
             <icon :icon="faPlay" fixed-width />
-            Selected
+            当前
           </Btn>
         </template>
 
@@ -36,7 +36,7 @@
             @click.prevent="shuffle"
           >
             <icon :icon="faRandom" fixed-width />
-            All
+            所有
           </Btn>
 
           <Btn
@@ -48,7 +48,7 @@
             @click.prevent="shuffleSelected"
           >
             <icon :icon="faRandom" fixed-width />
-            Selected
+            当前
           </Btn>
         </template>
 
@@ -57,7 +57,7 @@
           ref="addToButton"
           green @click.prevent.stop="toggleAddToMenu"
         >
-          {{ showingAddToMenu ? 'Cancel' : 'Add To…' }}
+          {{ showingAddToMenu ? '取消' : '添加到' }}
         </Btn>
 
         <Btn v-if="config.clearQueue" red title="Clear current queue" @click.prevent="clearQueue">Clear</Btn>

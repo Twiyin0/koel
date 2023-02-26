@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>New Albums</h1>
+    <h1>新专辑</h1>
 
     <ol v-if="loading" class="recently-added-album-list">
       <li v-for="i in 2" :key="i">
@@ -13,7 +13,7 @@
           <AlbumCard :album="album" layout="compact" />
         </li>
       </ol>
-      <p v-else class="text-secondary">No albums added yet.</p>
+      <p v-else class="text-secondary">妹有新的专辑</p>
     </template>
   </section>
 </template>

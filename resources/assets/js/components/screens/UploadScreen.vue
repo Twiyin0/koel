@@ -1,17 +1,17 @@
 <template>
   <section id="uploadWrapper">
     <ScreenHeader layout="collapsed">
-      Upload Media
+      上传音乐
 
       <template #controls>
         <BtnGroup v-if="hasUploadFailures" uppercased>
           <Btn data-testid="upload-retry-all-btn" green @click="retryAll">
             <icon :icon="faRotateRight" />
-            Retry All
+            重试所有
           </Btn>
           <Btn data-testid="upload-remove-all-btn" orange @click="removeFailedEntries">
             <icon :icon="faTrashCan" />
-            Remove Failed
+            移除上传失败的歌曲
           </Btn>
         </BtnGroup>
       </template>

@@ -1,7 +1,7 @@
 <template>
   <section id="albumsWrapper">
     <ScreenHeader layout="collapsed">
-      Albums
+      专辑
       <template #controls>
         <ViewModeSwitch v-model="viewMode" />
       </template>

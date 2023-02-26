@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>Most Played</h1>
+    <h1>最多播放</h1>
     <ol v-if="loading" class="top-song-list">
       <li v-for="i in 3" :key="i">
         <SongCardSkeleton />
@@ -12,7 +12,7 @@
           <SongCard :song="song" />
         </li>
       </ol>
-      <p v-else class="text-secondary">You don’t seem to have been playing.</p>
+      <p v-else class="text-secondary">你好像还没放过什么歌吧</p>
     </template>
   </section>
 </template>

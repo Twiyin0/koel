@@ -16,8 +16,8 @@
     </main>
 
     <footer>
-      <Btn v-if="showCancelButton" name="cancel" @click.prevent="cancel">Cancel</Btn>
-      <Btn name="ok">OK</Btn>
+      <Btn v-if="showCancelButton" name="cancel" @click.prevent="cancel">取消</Btn>
+      <Btn name="ok">好啦</Btn>
     </footer>
   </dialog>
 </template>

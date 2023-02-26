@@ -1,9 +1,9 @@
 <template>
   <span>
-    <button title="Zoom out" type="button" @click.prevent="$emit('out')">
+    <button title="缩小" type="button" @click.prevent="$emit('out')">
       <icon :icon="faSearchMinus" />
     </button>
-    <button title="Zoom in" type="button" @click.prevent="$emit('in')">
+    <button title="放大" type="button" @click.prevent="$emit('in')">
       <icon :icon="faSearchPlus" />
     </button>
   </span>

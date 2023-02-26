@@ -1,14 +1,14 @@
 <template>
   <section id="usersWrapper">
     <ScreenHeader layout="collapsed">
-      Users
+      用户
       <ControlsToggle v-model="showingControls" />
 
       <template #controls>
         <BtnGroup v-if="showingControls || !isPhone" uppercased>
           <Btn class="btn-add" green @click="showAddUserForm">
             <icon :icon="faPlus" />
-            Add
+            添加
           </Btn>
         </BtnGroup>
       </template>

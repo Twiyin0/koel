@@ -1,7 +1,7 @@
 <template>
   <section id="artistsWrapper">
     <ScreenHeader layout="collapsed">
-      Artists
+      艺术家
       <template #controls>
         <ViewModeSwitch v-model="viewMode" />
       </template>

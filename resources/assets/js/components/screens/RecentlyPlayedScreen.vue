@@ -1,7 +1,7 @@
 <template>
   <section id="recentlyPlayedWrapper">
     <ScreenHeader :layout="songs.length === 0 ? 'collapsed' : headerLayout">
-      Recently Played
+      最近播放
       <ControlsToggle v-model="showingControls" />
 
       <template #thumbnail>
@@ -31,8 +31,8 @@
       <template #icon>
         <icon :icon="faClock" />
       </template>
-      No songs recently played.
-      <span class="secondary d-block">Start playing to populate this playlist.</span>
+      最近妹有放歌听哦
+      <span class="secondary d-block">开始播放热门歌曲</span>
     </ScreenEmptyState>
   </section>
 </template>

@@ -4,13 +4,13 @@
       <LikeButton v-if="song" :song="song" class="like-btn" />
       <button v-else type="button" /> <!-- a placeholder to maintain the flex layout -->
 
-      <button type="button" title="Play previous song" @click.prevent="playPrev">
+      <button type="button" title="上一曲" @click.prevent="playPrev">
         <icon :icon="faStepBackward" />
       </button>
 
       <PlayButton />
 
-      <button type="button" title="Play next song" @click.prevent="playNext">
+      <button type="button" title="下一曲" @click.prevent="playNext">
         <icon :icon="faStepForward" />
       </button>
 

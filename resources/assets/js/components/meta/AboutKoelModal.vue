@@ -9,11 +9,12 @@
 
       <p v-if="shouldNotifyNewVersion" data-testid="new-version-about">
         <a :href="latestVersionReleaseUrl" target="_blank">
-          A new version of Koel is available ({{ latestVersion }})!
+          有新新本了哦 ({{ latestVersion }})!
         </a>
       </p>
 
       <p class="author">
+        作者信息<br/>
         Made with ❤️ by
         <a href="https://github.com/phanan" rel="noopener" target="_blank">Phan An</a>
         and quite a few
@@ -34,6 +35,7 @@
       <SponsorList />
 
       <p>
+        项目信息<br>
         Loving Koel? Please consider supporting its development via
         <a href="https://github.com/users/phanan/sponsorship" rel="noopener" target="_blank">GitHub Sponsors</a>
         and/or
@@ -42,7 +44,7 @@
     </main>
 
     <footer>
-      <Btn data-testid="close-modal-btn" red rounded @click.prevent="close">Close</Btn>
+      <Btn data-testid="close-modal-btn" red rounded @click.prevent="close">关闭</Btn>
     </footer>
   </div>
 </template>

@@ -6,7 +6,7 @@
         class="visualizer-btn"
         data-testid="toggle-visualizer-btn"
         href="/#/visualizer"
-        title="Show the visualizer"
+        title="点这里有好玩的！"
       >
         <icon :icon="faBolt" />
       </a>
@@ -16,7 +16,7 @@
         v-koel-tooltip.top
         :class="{ active: showEqualizer }"
         class="equalizer"
-        title="Show equalizer"
+        title="均衡器"
         type="button"
         @click.prevent="showEqualizer"
       >

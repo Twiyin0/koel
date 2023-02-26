@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>Top Artists</h1>
+    <h1>Top 艺术家</h1>
 
     <ol v-if="loading" class="two-cols top-album-list">
       <li v-for="i in 4" :key="i">
@@ -13,7 +13,7 @@
           <ArtistCard :artist="artist" layout="compact" />
         </li>
       </ol>
-      <p v-else class="text-secondary">No artists found.</p>
+      <p v-else class="text-secondary">这里妹有艺术家的位置啦！！</p>
     </template>
   </section>
 </template>

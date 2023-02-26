@@ -1,12 +1,12 @@
 <template>
   <section id="playlists">
     <h1>
-      <span>Playlists</span>
+      <span>歌单</span>
       <icon
         :icon="faCirclePlus"
         class="control create"
         role="button"
-        title="Create a new playlist or folder"
+        title="创建新的歌单或收藏夹"
         @click.stop.prevent="requestContextMenu"
       />
     </h1>

@@ -1,7 +1,7 @@
 <template>
   <section id="genresWrapper">
     <ScreenHeader layout="collapsed">
-      Genres
+      流派
     </ScreenHeader>
     <div class="main-scroll-wrap">
       <ul v-if="genres" class="genres">

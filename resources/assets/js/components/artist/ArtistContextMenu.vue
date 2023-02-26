@@ -1,15 +1,15 @@
 <template>
   <ContextMenuBase ref="base" data-testid="artist-context-menu" extra-class="artist-menu">
     <template v-if="artist">
-      <li @click="play">Play All</li>
-      <li @click="shuffle">Shuffle All</li>
+      <li @click="play">播放所有</li>
+      <li @click="shuffle">随机所有</li>
       <template v-if="isStandardArtist">
         <li class="separator" />
-        <li @click="viewArtistDetails">Go to Artist</li>
+        <li @click="viewArtistDetails">康康艺术家</li>
       </template>
       <template v-if="isStandardArtist && allowDownload">
         <li class="separator" />
-        <li @click="download">Download</li>
+        <li @click="download">下载</li>
       </template>
     </template>
   </ContextMenuBase>

@@ -1,6 +1,6 @@
 <template>
   <button ref="button" type="button">
-    <slot>Click me</slot>
+    <slot>点我</slot>
   </button>
 </template>
 

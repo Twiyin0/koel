@@ -2,7 +2,7 @@
   <article :class="mode" class="album-info" data-testid="album-info">
     <h1 v-if="mode === 'aside'" class="name">
       <span>{{ album.name }}</span>
-      <button :title="`Play all songs in ${album.name}`" class="control" type="button" @click.prevent="play">
+      <button :title="`播放${album.name}中所有歌曲`" class="control" type="button" @click.prevent="play">
         <icon :icon="faCirclePlay" size="xl" />
       </button>
     </h1>
@@ -16,7 +16,7 @@
           <div v-if="showFull" class="full" data-testid="full" v-html="info.wiki.full" />
 
           <button v-if="showSummary" class="more" @click.prevent="showingFullWiki = true">
-            Full Wiki
+            完整Wiki
           </button>
         </div>
 

@@ -2,58 +2,58 @@
   <ContextMenuBase ref="base" data-testid="song-context-menu" extra-class="song-menu">
     <template v-if="onlyOneSongSelected">
       <li @click.stop.prevent="doPlayback">
-        <span v-if="firstSongPlaying">Pause</span>
-        <span v-else>Play</span>
+        <span v-if="firstSongPlaying">暂停</span>
+        <span v-else>播放</span>
       </li>
       <li @click="viewAlbumDetails(songs[0].album_id)">Go to Album</li>
       <li @click="viewArtistDetails(songs[0].artist_id)">Go to Artist</li>
     </template>
     <li class="has-sub">
-      Add To
+      添加到
       <ul class="menu submenu menu-add-to">
         <template v-if="queue.length">
           <li v-if="currentSong" @click="queueSongsAfterCurrent">After Current Song</li>
-          <li @click="queueSongsToBottom">Bottom of Queue</li>
+          <li @click="queueSongsToBottom">当前播放最后</li>
           <li @click="queueSongsToTop">Top of Queue</li>
         </template>
-        <li v-else @click="queueSongsToBottom">Queue</li>
+        <li v-else @click="queueSongsToBottom">当前播放</li>
         <template v-if="!isFavoritesScreen">
           <li class="separator" />
-          <li @click="addSongsToFavorite">Favorites</li>
+          <li @click="addSongsToFavorite">喜欢的歌曲</li>
         </template>
         <li v-if="normalPlaylists.length" class="separator" />
         <ul v-if="normalPlaylists.length" v-koel-overflow-fade class="playlists">
           <li v-for="p in normalPlaylists" :key="p.id" @click="addSongsToExistingPlaylist(p)">{{ p.name }}</li>
         </ul>
         <li class="separator" />
-        <li @click="addSongsToNewPlaylist">New Playlist…</li>
+        <li @click="addSongsToNewPlaylist">新建歌单</li>
       </ul>
     </li>
 
     <template v-if="isQueueScreen">
       <li class="separator" />
-      <li @click="removeFromQueue">Remove from Queue</li>
+      <li @click="removeFromQueue">从当前播放移除</li>
       <li class="separator" />
     </template>
 
     <template v-if="isFavoritesScreen">
       <li class="separator" />
-      <li @click="removeFromFavorites">Remove from Favorites</li>
+      <li @click="removeFromFavorites">爱是会转移的……</li>
       <li class="separator" />
     </template>
 
-    <li v-if="isAdmin" @click="openEditForm">Edit…</li>
-    <li v-if="allowDownload" @click="download">Download</li>
-    <li v-if="onlyOneSongSelected" @click="copyUrl">Copy Shareable URL</li>
+    <li v-if="isAdmin" @click="openEditForm">编辑</li>
+    <li v-if="allowDownload" @click="download">下载</li>
+    <li v-if="onlyOneSongSelected" @click="copyUrl">分享</li>
 
     <template v-if="canBeRemovedFromPlaylist">
       <li class="separator" />
-      <li @click="removeFromPlaylist">Remove from Playlist</li>
+      <li @click="removeFromPlaylist">这里妹有你的位置啦！</li>
     </template>
 
     <template v-if="isAdmin">
       <li class="separator" />
-      <li @click="deleteFromFilesystem">Delete from Filesystem</li>
+      <li @click="deleteFromFilesystem">从文件中删除</li>
     </template>
   </ContextMenuBase>
 </template>

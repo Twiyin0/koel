@@ -34,7 +34,7 @@
         <icon :icon="faTags" />
       </template>
 
-      No songs in this genre.
+      这个流派妹有歌欸
     </ScreenEmptyState>
   </section>
 </template>

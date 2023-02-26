@@ -50,8 +50,8 @@
       </template>
 
       <template v-if="playlist?.is_smart">
-        No songs match the playlist's
-        <a @click.prevent="editPlaylist">criteria</a>.
+        没法匹配歌单的
+        <a @click.prevent="editPlaylist">条件</a>.
       </template>
       <template v-else>
         The playlist is currently empty.

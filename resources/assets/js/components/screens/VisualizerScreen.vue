@@ -12,7 +12,7 @@
       </div>
 
       <select v-model="selectedId">
-        <option disabled value="-1">Pick a visualizer</option>
+        <option disabled value="-1">选择特效</option>
         <option v-for="v in visualizers" :key="v.id" :value="v.id">{{ v.name }}</option>
       </select>
     </div>

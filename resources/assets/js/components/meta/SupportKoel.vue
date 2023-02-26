@@ -6,10 +6,10 @@
       and/or
       <a href="https://opencollective.com/koel" rel="noopener" target="_blank">OpenCollective</a>.
     </p>
-    <button type="button" @click.prevent="close">Hide</button>
+    <button type="button" @click.prevent="close">隐藏</button>
     <span class="sep" />
     <button type="button" @click.prevent="stopBugging">
-      Don't bug me again
+      不再提醒
     </button>
   </div>
 </template>

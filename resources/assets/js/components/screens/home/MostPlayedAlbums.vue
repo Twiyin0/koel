@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>Top Albums</h1>
+    <h1>Top 专辑</h1>
 
     <ol v-if="loading" class="two-cols top-album-list">
       <li v-for="i in 4" :key="i">
@@ -13,7 +13,7 @@
           <AlbumCard :album="album" layout="compact" />
         </li>
       </ol>
-      <p v-else class="text-secondary">No albums found.</p>
+      <p v-else class="text-secondary">这里妹有专辑的位置啦！！</p>
     </template>
   </section>
 </template>

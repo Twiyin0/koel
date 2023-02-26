@@ -3,9 +3,9 @@
     <div class="logo">
       <img alt="Koel's logo" src="@/../img/logo.svg" width="156">
     </div>
-    <input v-model="email" autofocus placeholder="Email Address" required type="email">
-    <input v-model="password" placeholder="Password" required type="password">
-    <Btn type="submit">Log In</Btn>
+    <input v-model="email" autofocus placeholder="邮箱地址" required type="email">
+    <input v-model="password" placeholder="密码" required type="password">
+    <Btn type="submit">登入</Btn>
   </form>
 </template>
 

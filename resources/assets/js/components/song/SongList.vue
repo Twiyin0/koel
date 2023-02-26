@@ -29,7 +29,7 @@
         title="Sort by title"
         @click="sort('title')"
       >
-        Title
+        标题
         <template v-if="config.sortable">
           <icon v-if="sortField === 'title' && sortOrder === 'asc'" :icon="faCaretDown" class="text-highlight" />
           <icon v-if="sortField === 'title' && sortOrder === 'desc'" :icon="faCaretUp" class="text-highlight" />
@@ -42,7 +42,7 @@
         title="Sort by album"
         @click="sort('album_name')"
       >
-        Album
+        专辑
         <template v-if="config.sortable">
           <icon v-if="sortField === 'album_name' && sortOrder === 'asc'" :icon="faCaretDown" class="text-highlight" />
           <icon v-if="sortField === 'album_name' && sortOrder === 'desc'" :icon="faCaretUp" class="text-highlight" />
@@ -55,7 +55,7 @@
         title="Sort by song duration"
         @click="sort('length')"
       >
-        Time
+        时间
         <template v-if="config.sortable">
           <icon v-if="sortField === 'length' && sortOrder === 'asc'" :icon="faCaretDown" class="text-highlight" />
           <icon v-if="sortField === 'length' && sortOrder === 'desc'" :icon="faCaretUp" class="text-highlight" />

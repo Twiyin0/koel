@@ -2,7 +2,7 @@
   <article :class="mode" class="artist-info" data-testid="artist-info">
     <h1 v-if="mode === 'aside'" class="name">
       <span>{{ artist.name }}</span>
-      <button :title="`Play all songs by ${artist.name}`" class="control" type="button" @click.prevent="play">
+      <button :title="`播放 ${artist.name} 的所有歌曲`" class="control" type="button" @click.prevent="play">
         <icon :icon="faCirclePlay" size="xl" />
       </button>
     </h1>
@@ -16,7 +16,7 @@
           <div v-if="showFull" class="full" data-testid="full" v-html="info.bio.full" />
 
           <button v-if="showSummary" class="more" @click.prevent="showingFullBio = true">
-            Full Bio
+            完整简历
           </button>
         </div>
 

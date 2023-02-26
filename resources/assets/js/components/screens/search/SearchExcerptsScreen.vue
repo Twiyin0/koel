@@ -1,15 +1,15 @@
 <template>
   <section id="searchExcerptsWrapper">
     <ScreenHeader layout="collapsed">
-      <span v-if="q">Searching for <span class="text-thin">{{ q }}</span></span>
-      <span v-else>Search</span>
+      <span v-if="q">我想搜<span class="text-thin">{{ q }}</span></span>
+      <span v-else>搜索</span>
     </ScreenHeader>
 
     <div ref="wrapper" class="main-scroll-wrap">
       <div v-if="q" class="results">
         <section class="songs" data-testid="song-excerpts">
           <h1>
-            Songs
+            歌曲
             <Btn
               v-if="excerpt.songs.length && !searching"
               data-testid="view-all-songs-btn"
@@ -18,7 +18,7 @@
               small
               @click.prevent="goToSongResults"
             >
-              View All
+              查看所有
             </Btn>
           </h1>
           <ul v-if="searching">
@@ -32,12 +32,12 @@
                 <SongCard :song="song" />
               </li>
             </ul>
-            <p v-else>None found.</p>
+            <p v-else>空空的……唔……</p>
           </template>
         </section>
 
         <section class="artists" data-testid="artist-excerpts">
-          <h1>Artists</h1>
+          <h1>艺术家</h1>
           <ul v-if="searching">
             <li v-for="i in 6" :key="i">
               <ArtistAlbumCardSkeleton layout="compact" />
@@ -49,12 +49,12 @@
                 <ArtistCard :artist="artist" layout="compact" />
               </li>
             </ul>
-            <p v-else>None found.</p>
+            <p v-else>空空的……唔……</p>
           </template>
         </section>
 
         <section class="albums" data-testid="album-excerpts">
-          <h1>Albums</h1>
+          <h1>专辑</h1>
           <ul v-if="searching">
             <li v-for="i in 6" :key="i">
               <ArtistAlbumCardSkeleton layout="compact" />
@@ -66,7 +66,7 @@
                 <AlbumCard :album="album" layout="compact" />
               </li>
             </ul>
-            <p v-else>None found.</p>
+            <p v-else>空空的……唔……</p>
           </template>
         </section>
       </div>

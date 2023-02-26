@@ -1,15 +1,15 @@
 <template>
   <section id="settingsWrapper">
-    <ScreenHeader>Settings</ScreenHeader>
+    <ScreenHeader>设置</ScreenHeader>
 
     <form class="main-scroll-wrap" @submit.prevent="confirmThenSave">
       <div class="form-row">
-        <label for="inputSettingsPath">Media Path</label>
+        <label for="inputSettingsPath">音乐库路径</label>
 
         <p id="mediaPathHelp" class="help">
-          The <em>absolute</em> path to the server directory containing your media.
-          Koel will scan this directory for songs and extract any available information.<br>
-          Scanning may take a while, especially if you have a lot of songs, so be patient.
+          包含媒体的服务器目录的<em>绝对</em>路径。
+          Koel 将扫描此目录中的歌曲并提取任何可用信息。<br>
+          扫描可能需要一段时间，特别是如果您有很多歌曲，请耐心等待。
         </p>
 
         <input
@@ -22,7 +22,7 @@
       </div>
 
       <div class="form-row">
-        <Btn type="submit">Scan</Btn>
+        <Btn type="submit">扫描</Btn>
       </div>
     </form>
   </section>
