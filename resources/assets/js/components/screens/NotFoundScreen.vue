@@ -1,6 +1,6 @@
 <template>
   <section>
-    <ScreenHeader layout="collapsed">Not Found</ScreenHeader>
+    <ScreenHeader layout="collapsed">什么也妹有哦</ScreenHeader>
 
     <div class="main-scroll-wrap">
       <ScreenEmptyState>
@@ -8,7 +8,7 @@
           <icon :icon="faKiwiBird" :mask="faMap" transform="shrink-12" />
         </template>
 
-        The requested content cannot be found.
+        妹有发现请求内容
       </ScreenEmptyState>
     </div>
   </section>

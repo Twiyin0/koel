@@ -2,15 +2,15 @@
   <nav id="sidebar" v-koel-clickaway="closeIfMobile" :class="{ showing: mobileShowing }" class="side side-nav">
     <SearchForm />
     <section class="music">
-      <h1>Your Music</h1>
+      <h1>静下心,轻轻聆听~</h1>
 
       <ul class="menu">
-        <SidebarItem screen="Home" href="#/home" :icon="faHome">Home</SidebarItem>
+        <SidebarItem screen="Home" href="#/home" :icon="faHome">首页</SidebarItem>
         <QueueSidebarItem />
-        <SidebarItem screen="Songs" href="#/songs" :icon="faMusic">All Songs</SidebarItem>
-        <SidebarItem screen="Albums" href="#/albums" :icon="faCompactDisc">Albums</SidebarItem>
-        <SidebarItem screen="Artists" href="#/artists" :icon="faMicrophone">Artists</SidebarItem>
-        <SidebarItem screen="Genres" href="#/genres" :icon="faTags">Genres</SidebarItem>
+        <SidebarItem screen="Songs" href="#/songs" :icon="faMusic">所有歌曲</SidebarItem>
+        <SidebarItem screen="Albums" href="#/albums" :icon="faCompactDisc">专辑</SidebarItem>
+        <SidebarItem screen="Artists" href="#/artists" :icon="faMicrophone">艺术家</SidebarItem>
+        <SidebarItem screen="Genres" href="#/genres" :icon="faTags">乐派</SidebarItem>
         <YouTubeSidebarItem v-show="showYouTube" />
       </ul>
     </section>
@@ -18,12 +18,12 @@
     <PlaylistList />
 
     <section v-if="isAdmin" class="manage">
-      <h1>Manage</h1>
+      <h1>管理</h1>
 
       <ul class="menu">
-        <SidebarItem screen="Settings" href="#/settings" :icon="faTools">Settings</SidebarItem>
-        <SidebarItem screen="Upload" href="#/upload" :icon="faUpload">Upload</SidebarItem>
-        <SidebarItem screen="Users" href="#/users" :icon="faUsers">Users</SidebarItem>
+        <SidebarItem screen="Settings" href="#/settings" :icon="faTools">设置</SidebarItem>
+        <SidebarItem screen="Upload" href="#/upload" :icon="faUpload">上传</SidebarItem>
+        <SidebarItem screen="Users" href="#/users" :icon="faUsers">用户</SidebarItem>
       </ul>
     </section>
   </nav>

@@ -7,7 +7,7 @@
         <template #icon>
           <icon :icon="faVolumeOff" />
         </template>
-        No songs found.
+        {"这里妹有歌欸"}
         <span class="secondary d-block">
           {{ isAdmin ? 'Have you set up your library yet?' : 'Contact your administrator to set up your library.' }}
         </span>
@@ -55,15 +55,15 @@ const { isAdmin } = useAuthorization()
 const { showErrorDialog } = useDialogBox()
 
 const greetings = [
-  'Oh hai!',
-  'Hey, %s!',
-  'Howdy, %s!',
-  'Yo!',
-  'How’s it going, %s?',
-  'Sup, %s?',
-  'How’s life, %s?',
-  'How’s your day, %s?',
-  'How have you been, %s?'
+  '欢迎！',
+  '你好啊, %s!',
+  '别来无恙, %s!',
+  '哟~，这不是%s嘛！',
+  '累了吗, 坐下来听听音乐吧~',
+  '每天皆是如此，却因此幸福',
+  '虽然没有人再等你回家，却又心灵再依偎着你',
+  '%s, 听~是心跳是声音',
+  '%s, 今天也是元气满满的一天呢~'
 ]
 
 const greeting = computed(() => sample(greetings)!.replace('%s', userStore.current?.name))
