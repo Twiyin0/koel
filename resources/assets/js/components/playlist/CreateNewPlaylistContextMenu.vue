@@ -1,10 +1,10 @@
 <template>
   <ContextMenuBase ref="base">
-    <li data-testid="playlist-context-menu-create-simple" @click="onItemClicked('new-playlist')">New Playlist…</li>
+    <li data-testid="playlist-context-menu-create-simple" @click="onItemClicked('new-playlist')">新建歌单</li>
     <li data-testid="playlist-context-menu-create-smart" @click="onItemClicked('new-smart-playlist')">
       新建智能歌单
     </li>
-    <li data-testid="playlist-context-menu-create-folder" @click="onItemClicked('new-folder')">New Folder…</li>
+    <li data-testid="playlist-context-menu-create-folder" @click="onItemClicked('new-folder')">新建收藏夹</li>
   </ContextMenuBase>
 </template>
 

@@ -21,7 +21,7 @@
           {{ isCurrentUser ? 'Your Profile' : 'Edit' }}
         </Btn>
         <Btn v-if="!isCurrentUser" class="btn-delete" red small @click="confirmDelete">
-          Delete
+          删惹QAQ
         </Btn>
       </footer>
     </main>

@@ -2,12 +2,12 @@
   <form data-testid="update-profile-form" @submit.prevent="update">
     <div class="form-row">
       <label>
-        Current Password
+        当前密码
         <input
           v-model="profile.current_password"
           v-koel-focus
           name="current_password"
-          placeholder="Required to update your profile"
+          placeholder="更新信息的先输密码"
           required
           type="password"
         >
@@ -16,39 +16,39 @@
 
     <div class="form-row">
       <label>
-        Name
+        名称
         <input id="inputProfileName" v-model="profile.name" name="name" required type="text">
       </label>
     </div>
 
     <div class="form-row">
       <label>
-        Email Address
+        邮箱
         <input id="inputProfileEmail" v-model="profile.email" name="email" required type="email">
       </label>
     </div>
 
     <div class="form-row">
       <label>
-        New Password
+        新密码
         <input
           id="inputProfileNewPassword"
           v-model="profile.new_password"
           autocomplete="new-password"
           name="new_password"
-          placeholder="Leave empty to keep current password"
+          placeholder="不改密码留空就可以哦"
           type="password"
         >
         <span class="password-rules help">
-          Min. 10 characters. Should be a mix of characters, numbers, and symbols.
+          最少 10 个字符。要字符、数字和符号的组合哦~
         </span>
       </label>
     </div>
 
     <div class="form-row">
-      <Btn class="btn-submit" type="submit">Save</Btn>
+      <Btn class="btn-submit" type="submit">保存</Btn>
       <span v-if="isDemo()" class="demo-notice">
-        Changes will not be saved in the demo version.
+        这些更改，在Demo版本不起效哦
       </span>
     </div>
   </form>

@@ -2,17 +2,17 @@
   <FormBase>
     <form @submit.prevent="submit" @keydown.esc="maybeClose">
       <header>
-        <h1>New Smart Playlist</h1>
+        <h1>新建智能歌单</h1>
       </header>
 
       <main>
         <div class="form-row cols">
           <label class="name">
-            Name
+            名称
             <input v-model="name" v-koel-focus name="name" placeholder="Playlist name" required type="text">
           </label>
           <label class="folder">
-            Folder
+            收藏夹
             <select v-model="folderId">
               <option :value="null" />
               <option v-for="folder in folders" :key="folder.id" :value="folder.id">{{ folder.name }}</option>
@@ -30,14 +30,14 @@
           />
           <Btn class="btn-add-group" green small title="Add a new group" uppercase @click.prevent="addGroup">
             <icon :icon="faPlus" />
-            Group
+            组别
           </Btn>
         </div>
       </main>
 
       <footer>
-        <Btn type="submit">Save</Btn>
-        <Btn class="btn-cancel" white @click.prevent="maybeClose">Cancel</Btn>
+        <Btn type="submit">保存^_^</Btn>
+        <Btn class="btn-cancel" white @click.prevent="maybeClose">取消awa</Btn>
       </footer>
     </form>
   </FormBase>

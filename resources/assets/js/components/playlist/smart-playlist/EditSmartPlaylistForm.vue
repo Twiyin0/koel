@@ -2,13 +2,13 @@
   <FormBase>
     <form @submit.prevent="submit" @keydown.esc="maybeClose">
       <header>
-        <h1>Edit Smart Playlist</h1>
+        <h1>编辑智能歌单</h1>
       </header>
 
       <main>
         <div class="form-row cols">
           <label class="name">
-            Name
+            名称
             <input
               v-model="mutablePlaylist.name"
               v-koel-focus name="name"
@@ -18,7 +18,7 @@
             >
           </label>
           <label class="folder">
-            Folder
+            收藏夹
             <select v-model="mutablePlaylist.folder_id">
               <option :value="null" />
               <option v-for="folder in folders" :key="folder.id" :value="folder.id">{{ folder.name }}</option>
@@ -41,8 +41,8 @@
       </main>
 
       <footer>
-        <Btn type="submit">Save</Btn>
-        <Btn class="btn-cancel" white @click.prevent="maybeClose">Cancel</Btn>
+        <Btn type="submit">保存^_^</Btn>
+        <Btn class="btn-cancel" white @click.prevent="maybeClose">取消awa</Btn>
       </footer>
     </form>
   </FormBase>

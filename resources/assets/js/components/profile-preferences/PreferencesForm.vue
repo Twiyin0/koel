@@ -3,25 +3,25 @@
     <div v-if="!isPhone" class="form-row">
       <label>
         <CheckBox v-model="preferences.notify" name="notify" />
-        Show “Now Playing” song notification
+        显示正在播放的通知
       </label>
     </div>
     <div v-if="!isPhone" class="form-row">
       <label>
         <CheckBox v-model="preferences.confirmClosing" name="confirm_closing" />
-        Confirm before closing Koel
+        在关闭钱确认
       </label>
     </div>
     <div v-if="isPhone" class="form-row">
       <label>
         <CheckBox v-model="preferences.transcodeOnMobile" name="transcode_on_mobile" />
-        Convert and play media at 128kbps on mobile
+        在移动设备上以 128kbps 的速度转换和播放音乐
       </label>
     </div>
     <div class="form-row">
       <label>
         <CheckBox v-model="preferences.showAlbumArtOverlay" name="show_album_art_overlay" />
-        Show a translucent, blurred overlay of the current album’s art
+        显示当前专辑封面的半透明模糊叠加
       </label>
     </div>
   </div>

@@ -1,25 +1,25 @@
 <template>
   <form data-testid="edit-user-form" @submit.prevent="submit" @keydown.esc="maybeClose">
     <header>
-      <h1>Edit User</h1>
+      <h1>编辑小伙伴信息</h1>
     </header>
 
     <main>
       <div class="form-row">
         <label>
-          Name
+          名称
           <input v-model="updateData.name" v-koel-focus name="name" required title="Name" type="text">
         </label>
       </div>
       <div class="form-row">
         <label>
-          Email
+          邮箱
           <input v-model="updateData.email" name="email" required title="Email" type="email">
         </label>
       </div>
       <div class="form-row">
         <label>
-          Password
+          密码
           <input
             v-model="updateData.password"
             autocomplete="new-password"
@@ -28,13 +28,13 @@
             type="password"
           >
         </label>
-        <p class="help">Min. 10 characters. Should be a mix of characters, numbers, and symbols.</p>
+        <p class="help">最少 10 个字符。要字符、数字和符号的组合哦</p>
       </div>
       <div class="form-row">
         <label>
           <CheckBox v-model="updateData.is_admin" name="is_admin" />
-          User is an admin
-          <TooltipIcon title="Admins can perform administrative tasks like managing users and uploading songs." />
+          设为小管管（管理）
+          <TooltipIcon title="管理员可以执行管理任务，比如管理用户和上传歌曲" />
         </label>
       </div>
     </main>

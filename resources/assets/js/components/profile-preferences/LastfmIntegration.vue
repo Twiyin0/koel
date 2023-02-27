@@ -1,23 +1,23 @@
 <template>
   <section class="text-secondary">
-    <h1>Last.fm Integration</h1>
+    <h1>Last.fm扩展</h1>
 
     <div v-if="useLastfm" data-testid="lastfm-integrated">
       <p>
-        This installation of Koel integrates with Last.fm.
+        外卖夜安装了 Last.fm. 扩展
         <span v-if="connected">
-          It appears that you have connected your Last.fm account as well – Perfect!
+          看来你也已连接 Last.fm 帐户了呢 - 完美！
         </span>
-        <span v-else>It appears that you haven’t connected to your Last.fm account though.</span>
+        <span v-else>不过，你似乎还没连接到 Last.fm 帐户呢</span>
       </p>
       <p>
-        Connecting Koel and your Last.fm account enables such exciting features as
+        连接Koel和您的 Last.fm 帐户可以下面这个
         <a
           class="text-highlight"
           href="https://www.last.fm/about/trackmymusic"
           rel="noopener"
           target="_blank"
-        >scrobbling</a>.
+        >scrobbling</a>的功能（我也不知道是什么）.
       </p>
       <div class="buttons">
         <Btn class="connect" @click.prevent="connect">
@@ -25,20 +25,20 @@
           {{ connected ? 'Reconnect' : 'Connect' }}
         </Btn>
 
-        <Btn v-if="connected" class="disconnect" gray @click.prevent="disconnect">Disconnect</Btn>
+        <Btn v-if="connected" class="disconnect" gray @click.prevent="disconnect">断开连接</Btn>
       </div>
     </div>
 
     <div v-else data-testid="lastfm-not-integrated">
       <p>
-        This installation of Koel has no Last.fm integration.
+        我们好像妹有安装 Last.fm 扩展欸.
         <span v-if="isAdmin" data-testid="lastfm-admin-instruction">
-          Visit
+          可以看
           <a href="https://docs.koel.dev/3rd-party.html#last-fm" class="text-highlight" target="_blank">Koel’s Wiki</a>
-          for a quick how-to.
+          来安装此扩展
         </span>
         <span v-else data-testid="lastfm-user-instruction">
-          Try politely asking an administrator to enable it.
+        然后叫管理启用该扩展
         </span>
       </p>
     </div>

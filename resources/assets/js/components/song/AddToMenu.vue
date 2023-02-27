@@ -1,7 +1,7 @@
 <template>
   <div class="add-to" data-testid="add-to-menu" tabindex="0">
     <section class="existing-playlists">
-      <p>添加 {{ pluralize(songs, 'song') }} 到</p>
+      <p>将 {{ pluralize(songs, 'song') }} 添加到</p>
 
       <ul v-koel-overflow-fade>
         <template v-if="config.queue">
@@ -16,11 +16,11 @@
               在当前歌曲之后
             </li>
             <li class="bottom-queue" data-testid="queue-bottom" tabindex="0" @click="queueSongsToBottom">
-              播放列表最后
+              当前播放最后
             </li>
-            <li class="top-queue" data-testid="queue-top" tabindex="0" @click="queueSongsToTop">Top of Queue</li>
+            <li class="top-queue" data-testid="queue-top" tabindex="0" @click="queueSongsToTop">单曲播放最前</li>
           </template>
-          <li v-else data-testid="queue" tabindex="0" @click="queueSongsToBottom">Queue</li>
+          <li v-else data-testid="queue" tabindex="0" @click="queueSongsToBottom">正在播放</li>
         </template>
 
         <li

@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="submit" @keydown.esc="maybeClose">
     <header>
-      <h1>Edit Playlist</h1>
+      <h1>编辑歌单</h1>
     </header>
 
     <main>

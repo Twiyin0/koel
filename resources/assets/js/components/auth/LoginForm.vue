@@ -6,6 +6,7 @@
     <input v-model="email" autofocus placeholder="邮箱地址" required type="email">
     <input v-model="password" placeholder="密码" required type="password">
     <Btn type="submit">登入</Btn>
+    <p>如果想要账户可以联系<a target="_blank" href="https://iin0.cn">音铃</a>哦</p>
   </form>
 </template>
 

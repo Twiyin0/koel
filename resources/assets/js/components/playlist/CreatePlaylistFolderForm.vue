@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="submit" @keydown.esc="maybeClose">
     <header>
-      <h1>新的歌单</h1>
+      <h1>新建歌单</h1>
     </header>
 
     <main>

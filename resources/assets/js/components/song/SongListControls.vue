@@ -60,7 +60,7 @@
           {{ showingAddToMenu ? '取消' : '添加到' }}
         </Btn>
 
-        <Btn v-if="config.clearQueue" red title="Clear current queue" @click.prevent="clearQueue">Clear</Btn>
+        <Btn v-if="config.clearQueue" red title="Clear current queue" @click.prevent="clearQueue">清空惹QwQ</Btn>
       </BtnGroup>
 
       <BtnGroup v-if="config.refresh || config.deletePlaylist">

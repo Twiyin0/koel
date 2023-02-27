@@ -5,16 +5,16 @@
         <span v-if="firstSongPlaying">暂停</span>
         <span v-else>播放</span>
       </li>
-      <li @click="viewAlbumDetails(songs[0].album_id)">Go to Album</li>
-      <li @click="viewArtistDetails(songs[0].artist_id)">Go to Artist</li>
+      <li @click="viewAlbumDetails(songs[0].album_id)">哪个专辑里的捏</li>
+      <li @click="viewArtistDetails(songs[0].artist_id)">是谁唱的捏~</li>
     </template>
     <li class="has-sub">
       添加到
       <ul class="menu submenu menu-add-to">
         <template v-if="queue.length">
-          <li v-if="currentSong" @click="queueSongsAfterCurrent">After Current Song</li>
+          <li v-if="currentSong" @click="queueSongsAfterCurrent">放到下一曲播放</li>
           <li @click="queueSongsToBottom">当前播放最后</li>
-          <li @click="queueSongsToTop">Top of Queue</li>
+          <li @click="queueSongsToTop">当前播放最前</li>
         </template>
         <li v-else @click="queueSongsToBottom">当前播放</li>
         <template v-if="!isFavoritesScreen">

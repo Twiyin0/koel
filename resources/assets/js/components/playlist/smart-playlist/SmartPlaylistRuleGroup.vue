@@ -2,10 +2,10 @@
   <div class="rule-group" data-testid="smart-playlist-rule-group">
     <div class="group-banner">
       <span v-if="isFirstGroup">
-        Include songs that match <strong>all</strong> of these criteria
+        匹配 <strong>所有</strong> 条件
       </span>
       <span v-else>
-        or <strong>all</strong> of these criteria
+        或者 <strong>所有</strong> 符合条件的歌
       </span>
     </div>
 
@@ -19,7 +19,7 @@
 
     <Btn class="btn-add-rule" green small uppercase @click.prevent="addRule">
       <icon :icon="faPlus" />
-      Rule
+      规则
     </Btn>
   </div>
 </template>

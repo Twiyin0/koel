@@ -15,31 +15,33 @@
 
       <p class="author">
         作者信息<br/>
-        Made with ❤️ by
+        Koel是由原作者
         <a href="https://github.com/phanan" rel="noopener" target="_blank">Phan An</a>
-        and quite a few
-        <a href="https://github.com/koel/core/graphs/contributors" rel="noopener" target="_blank">awesome</a>&nbsp;<a
-          href="https://github.com/koel/koel/graphs/contributors" rel="noopener" target="_blank"
-        >contributors</a>.
+        与
+        <a href="https://github.com/koel/core/graphs/contributors" rel="noopener" target="_blank">许多贡献者</a>共同完成的项目.
       </p>
 
-      <div v-if="credits" class="credit-wrapper" data-testid="demo-credits">
+      <!--div v-if="credits" class="credit-wrapper" data-testid="demo-credits">
         Music by
         <ul class="credits">
           <li v-for="credit in credits" :key="credit.name">
             <a :href="credit.url" target="_blank">{{ credit.name }}</a>
           </li>
         </ul>
-      </div>
+      </div-->
 
       <SponsorList />
 
       <p>
         项目信息<br>
-        Loving Koel? Please consider supporting its development via
+        喜欢Koel吗？可以通过
         <a href="https://github.com/users/phanan/sponsorship" rel="noopener" target="_blank">GitHub Sponsors</a>
-        and/or
-        <a href="https://opencollective.com/koel" rel="noopener" target="_blank">OpenCollective</a>.
+        和
+        <a href="https://opencollective.com/koel" rel="noopener" target="_blank">OpenCollective</a>支持原作者哦~
+      </p>
+      <p>
+        本项目由: <a href="https://iin0.cn" target="_blank">暮色音铃Twiyin0</a>汉化<br>
+        Github: <a href="https://github.com/Twiyin0" target="_blank">Twiyin0</a>
       </p>
     </main>
 

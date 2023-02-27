@@ -1,10 +1,10 @@
 <template>
   <ContextMenuBase ref="base">
-    <li @click="play">Play</li>
-    <li @click="shuffle">Shuffle</li>
+    <li @click="play">播放</li>
+    <li @click="shuffle">随机</li>
     <li class="separator" />
-    <li @click="edit">Edit…</li>
-    <li @click="destroy">Delete</li>
+    <li @click="edit">编辑</li>
+    <li @click="destroy">删掉惹QAQ</li>
   </ContextMenuBase>
 </template>
 

@@ -9,7 +9,7 @@
       <div class="bottom">
         <button
           v-koel-tooltip.left
-          :title="shouldNotifyNewVersion ? 'New version available!' : 'About Koel'"
+          :title="shouldNotifyNewVersion ? '有新版本了欸' : '关于'"
           type="button"
           @click.prevent="openAboutKoelModal"
         >

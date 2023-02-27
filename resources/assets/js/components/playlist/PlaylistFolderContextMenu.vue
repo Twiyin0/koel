@@ -10,7 +10,7 @@
       <li @click="createSmartPlaylist">新建智能歌单</li>
       <li class="separator" />
       <li @click="rename">重命名</li>
-      <li @click="destroy">删掉惹！</li>
+      <li @click="destroy">删掉惹QAQ</li>
     </template>
   </ContextMenuBase>
 </template>
