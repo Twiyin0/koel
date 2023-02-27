@@ -2,7 +2,7 @@
   <button
     v-koel-tooltip.top
     :class="{ active: mode !== 'NO_REPEAT' }"
-    :title="`修改响应模式 (current: ${readableMode})`"
+    :title="`循环模式 (当前: ${readableMode})`"
     data-testid="repeat-mode-switch"
     type="button"
     @click.prevent="changeMode"

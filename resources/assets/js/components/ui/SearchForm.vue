@@ -32,7 +32,7 @@ import { debounce } from 'lodash'
 import { eventBus } from '@/utils'
 import { useRouter } from '@/composables'
 
-const placeholder = isMobile.any ? 'Search' : 'Press F to search'
+const placeholder = isMobile.any ? '搜索' : '按F搜索哦~'
 
 const { go } = useRouter()
 

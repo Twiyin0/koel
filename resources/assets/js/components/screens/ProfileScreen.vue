@@ -1,6 +1,6 @@
 <template>
   <section id="profileWrapper">
-    <ScreenHeader>个人信息 &amp; 偏好</ScreenHeader>
+    <ScreenHeader>我的信息 &amp; 偏好</ScreenHeader>
 
     <div class="main-scroll-wrap">
       <ProfileForm />

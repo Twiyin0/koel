@@ -3,7 +3,7 @@
     <header>
       <label class="select-wrapper">
         <select v-model="selectedPresetId" title="Select equalizer">
-          <option disabled value="-1">Preset</option>
+          <option disabled value="-1">预设</option>
           <option v-for="preset in presets" :key="preset.id" :value="preset.id">{{ preset.name }}</option>
         </select>
         <icon :icon="faCaretDown" class="arrow text-highlight" size="sm" />
@@ -14,7 +14,7 @@
       <div class="bands">
         <span class="band">
           <span class="slider" />
-          <label>Preamp</label>
+          <label>前置放大器</label>
         </span>
 
         <span class="indicators">
@@ -31,7 +31,7 @@
     </main>
 
     <footer>
-      <Btn @click.prevent="close">Close</Btn>
+      <Btn @click.prevent="close">关闭</Btn>
     </footer>
   </form>
 </template>

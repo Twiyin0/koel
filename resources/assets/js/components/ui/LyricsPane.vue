@@ -8,13 +8,13 @@
         </div>
         <p v-if="song.id && !song.lyrics" class="none text-secondary">
           <template v-if="isAdmin">
-            No lyrics found.
+            妹有歌词欸……可以
             <button class="text-highlight" type="button" @click.prevent="showEditSongForm">
-              Click here
+              点这里
             </button>
-            to add lyrics.
+            来加上点调皮的歌词哦
           </template>
-          <span v-else>No lyrics available. Are you listening to Bach?</span>
+          <span v-else>你这歌词是纯音乐做的罢&lt;( ￣^￣)</span>
         </p>
       </template>
     </div>

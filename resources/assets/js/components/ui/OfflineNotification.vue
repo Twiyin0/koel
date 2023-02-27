@@ -4,7 +4,7 @@
       <icon :icon="faWifi" fixed-width size="xl" />
       <icon :icon="faSlash" fixed-width size="lg" transform="up-2" />
     </icon-layers>
-    <span class="text">You’re offline.</span>
+    <span class="text">你离线了哦~是怎么会事捏</span>
   </div>
 </template>
 

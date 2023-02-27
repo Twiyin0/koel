@@ -39,8 +39,10 @@ const props = defineProps<{ list: PlaylistLike }>()
 const { list } = toRefs(props)
 
 const isPlaylist = (list: PlaylistLike): list is Playlist => 'id' in list
-const isFavoriteList = (list: PlaylistLike): list is FavoriteList => list.name === 'Favorites'
-const isRecentlyPlayedList = (list: PlaylistLike): list is RecentlyPlayedList => list.name === 'Recently Played'
+//const isFavoriteList = (list: PlaylistLike): list is FavoriteList => list.name === 'Favorites'
+//const isRecentlyPlayedList = (list: PlaylistLike): list is RecentlyPlayedList => list.name === 'Recently Played'
+const isFavoriteList = (list: PlaylistLike): list is FavoriteList => list.name === '喜欢的音乐'
+const isRecentlyPlayedList = (list: PlaylistLike): list is RecentlyPlayedList => list.name === '最近播放'
 
 const active = ref(false)
 

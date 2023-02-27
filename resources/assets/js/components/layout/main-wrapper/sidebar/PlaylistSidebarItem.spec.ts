@@ -26,6 +26,7 @@ new class extends UnitTestCase {
     })
 
     it.each<FavoriteList['name'] | RecentlyPlayedList['name']>(['Favorites', 'Recently Played'])
+    //it.each<FavoriteList['name'] | RecentlyPlayedList['name']>(['喜欢的音乐', '最近播放'])
     ('does not request context menu if not playlist', async (name) => {
       const list: FavoriteList | RecentlyPlayedList = {
         name,

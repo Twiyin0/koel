@@ -40,15 +40,15 @@
     <ScreenTabs>
       <template #header>
         <label :class="{ active: activeTab === 'Songs' }">
-          Songs
+          单曲
           <input v-model="activeTab" type="radio" name="tab" value="Songs">
         </label>
         <label :class="{ active: activeTab === 'OtherAlbums' }">
-          Other Albums
+          别的专辑
           <input v-model="activeTab" type="radio" name="tab" value="OtherAlbums">
         </label>
         <label v-if="useLastfm" :class="{ active: activeTab === 'Info' }">
-          Information
+          信息
           <input v-model="activeTab" type="radio" name="tab" value="Info">
         </label>
       </template>

@@ -36,11 +36,11 @@
             <icon :icon="faUpload" />
           </template>
 
-          {{ canDropFolders ? 'Drop files or folders to upload' : 'Drop files to upload' }}
+          {{ canDropFolders ? '把文件或者文件夹拽到这里就能上传啦' : '把文件拽到这里就可以上传啦' }}
 
           <span class="secondary d-block">
             <a class="or-click d-block" role="button">
-              or click here to select songs
+              或者点这里上传哦~
               <input :accept="acceptAttribute" multiple name="file[]" type="file" @change="onFileInputChange">
             </a>
           </span>
@@ -51,7 +51,7 @@
         <template #icon>
           <icon :icon="faWarning" />
         </template>
-        No media path set.
+        妹又设置音乐库路径(￣﹏￣；)
       </ScreenEmptyState>
     </div>
   </section>

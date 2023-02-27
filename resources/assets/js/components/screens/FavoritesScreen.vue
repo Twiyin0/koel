@@ -1,7 +1,7 @@
 <template>
   <section id="favoritesWrapper">
     <ScreenHeader :layout="songs.length === 0 ? 'collapsed' : headerLayout">
-      喜欢的歌哦
+      喜欢的音乐
       <ControlsToggle v-model="showingControls" />
 
       <template #thumbnail>

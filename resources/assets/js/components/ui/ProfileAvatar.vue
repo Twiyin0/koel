@@ -4,7 +4,7 @@
     class="view-profile"
     data-testid="view-profile-link"
     href="/#/profile"
-    title="个人偏好"
+    title="康康自己"
   >
     <img :alt="`Avatar of ${currentUser.name}`" :src="currentUser.avatar">
   </a>

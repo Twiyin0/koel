@@ -17,7 +17,7 @@
           title="Download all songs in playlist"
           @click.prevent="download"
         >
-          Download All
+          下载所有
         </a>
       </template>
 
@@ -54,9 +54,9 @@
         <a @click.prevent="editPlaylist">条件</a>.
       </template>
       <template v-else>
-        The playlist is currently empty.
+        歌单空空的
         <span class="d-block secondary">
-          Drag songs into its name in the sidebar or use the &quot;Add To…&quot; button to fill it up.
+          你可以把歌曲拖到侧边栏名称中，或使用“添加”按钮来填满歌单哦
         </span>
       </template>
     </ScreenEmptyState>

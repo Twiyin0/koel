@@ -75,8 +75,8 @@
         <template #icon>
           <icon :icon="faSearch" />
         </template>
-        Find songs, artists, and albums,
-        <span class="secondary d-block">all in one place.</span>
+        单曲，艺术家和专辑
+        <span class="secondary d-block">都可以在这找到(●'◡'●)</span>
       </ScreenEmptyState>
     </div>
   </section>

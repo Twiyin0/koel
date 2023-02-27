@@ -12,8 +12,8 @@
     </h1>
 
     <ul>
-      <PlaylistSidebarItem :list="{ name: 'Favorites', songs: favorites }" />
-      <PlaylistSidebarItem :list="{ name: 'Recently Played', songs: [] }" />
+      <PlaylistSidebarItem :list="{ name: '喜欢的音乐', songs: favorites }" />
+      <PlaylistSidebarItem :list="{ name: '最近播放', songs: [] }" />
       <PlaylistFolderSidebarItem v-for="folder in folders" :key="folder.id" :folder="folder" />
       <PlaylistSidebarItem v-for="playlist in orphanPlaylists" :key="playlist.id" :list="playlist" />
     </ul>

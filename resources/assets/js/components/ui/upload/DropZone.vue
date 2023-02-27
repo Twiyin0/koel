@@ -8,7 +8,7 @@
     @drop="onDrop"
   >
     <icon :icon="faUpload" size="6x" />
-    <h3>Drop to upload</h3>
+    <h3>拖放上传</h3>
   </div>
 </template>
 
