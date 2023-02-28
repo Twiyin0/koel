@@ -18,7 +18,7 @@
 
       <footer>
         <Btn class="btn-edit" orange small @click="edit">
-          {{ isCurrentUser ? 'Your Profile' : 'Edit' }}
+          {{ isCurrentUser ? '个人信息' : '编辑' }}
         </Btn>
         <Btn v-if="!isCurrentUser" class="btn-delete" red small @click="confirmDelete">
           删惹QAQ

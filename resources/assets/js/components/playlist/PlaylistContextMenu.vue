@@ -1,7 +1,7 @@
 <template>
   <ContextMenuBase ref="base">
     <li @click="play">播放</li>
-    <li @click="shuffle">随机</li>
+    <li @click="shuffle">随机排序</li>
     <li class="separator" />
     <li @click="edit">编辑</li>
     <li @click="destroy">删掉惹QAQ</li>

@@ -13,12 +13,12 @@
     </template>
     <template #meta>
       <a
-        :title="`随机播放${artist.name}的歌曲`"
+        :title="`随机排序${artist.name}的歌曲`"
         class="shuffle-artist"
         role="button"
         @click.prevent="shuffle"
       >
-        Shuffle
+        随机排序
       </a>
       <a
         v-if="allowDownload"

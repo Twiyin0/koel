@@ -1,10 +1,10 @@
 <template>
   <div v-if="shown" class="support-bar" data-testid="support-bar">
     <p>
-      Loving Koel? Please consider supporting its development via
+      喜欢koel吗？可以通过
       <a href="https://github.com/users/phanan/sponsorship" rel="noopener" target="_blank">GitHub Sponsors</a>
-      and/or
-      <a href="https://opencollective.com/koel" rel="noopener" target="_blank">OpenCollective</a>.
+      和
+      <a href="https://opencollective.com/koel" rel="noopener" target="_blank">OpenCollective</a>支持作者哦~
     </p>
     <button type="button" @click.prevent="close">隐藏</button>
     <span class="sep" />

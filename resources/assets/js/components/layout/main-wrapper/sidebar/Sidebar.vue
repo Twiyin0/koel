@@ -3,7 +3,7 @@
     <SearchForm />
     <section class="music">
       <h1>yin0Music</h1>
-      <h1>静下心，放松下来聆听心灵~</h1>
+      <h1>放松，静下心聆听心灵~</h1>
 
       <ul class="menu">
         <SidebarItem screen="Home" href="#/home" :icon="faHome">主页</SidebarItem>

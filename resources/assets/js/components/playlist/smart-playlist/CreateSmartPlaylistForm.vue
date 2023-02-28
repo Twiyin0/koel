@@ -9,7 +9,7 @@
         <div class="form-row cols">
           <label class="name">
             名称
-            <input v-model="name" v-koel-focus name="name" placeholder="Playlist name" required type="text">
+            <input v-model="name" v-koel-focus name="name" placeholder="歌单名称" required type="text">
           </label>
           <label class="folder">
             收藏夹

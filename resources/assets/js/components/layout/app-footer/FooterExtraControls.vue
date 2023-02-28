@@ -45,7 +45,7 @@ import { eventBus, isAudioContextSupported as useEqualizer, isFullscreenSupporte
 import Volume from '@/components/ui/Volume.vue'
 
 const isFullscreen = ref(false)
-const fullscreenButtonTitle = computed(() => (isFullscreen.value ? 'Exit fullscreen mode' : 'Enter fullscreen mode'))
+const fullscreenButtonTitle = computed(() => (isFullscreen.value ? '取消全屏' : '全屏'))
 
 const showEqualizer = () => eventBus.emit('MODAL_SHOW_EQUALIZER')
 const toggleFullscreen = () => eventBus.emit('FULLSCREEN_TOGGLE')

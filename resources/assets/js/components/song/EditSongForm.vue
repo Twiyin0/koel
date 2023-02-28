@@ -105,7 +105,7 @@
 
           <div class="form-row cols">
             <label>
-              Track
+              音轨
               <input
                 v-model="formData.track"
                 :placeholder="inputPlaceholder"
@@ -116,7 +116,7 @@
               >
             </label>
             <label>
-              碟片
+              唱片
               <input
                 v-model="formData.disc"
                 :placeholder="inputPlaceholder"
@@ -178,8 +178,8 @@
     </main>
 
     <footer>
-      <Btn type="submit">Update</Btn>
-      <Btn class="btn-cancel" white @click.prevent="maybeClose">Cancel</Btn>
+      <Btn type="submit">更新</Btn>
+      <Btn class="btn-cancel" white @click.prevent="maybeClose">取消</Btn>
     </footer>
   </form>
 </template>

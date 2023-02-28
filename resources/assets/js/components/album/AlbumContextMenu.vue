@@ -2,7 +2,7 @@
   <ContextMenuBase ref="base" data-testid="album-context-menu" extra-class="album-menu">
     <template v-if="album">
       <li @click="play">播放所有</li>
-      <li @click="shuffle">随机所有</li>
+      <li @click="shuffle">随机排序所有</li>
       <li class="separator" />
       <li v-if="isStandardAlbum" @click="viewAlbumDetails">所在专辑</li>
       <li v-if="isStandardArtist" @click="viewArtistDetails">康康艺术家</li>

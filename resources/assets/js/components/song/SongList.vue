@@ -13,7 +13,7 @@
         class="track-number"
         data-testid="header-track-number"
         role="button"
-        title="Sort by track number"
+        title="按音轨排序"
         @click="sort('track')"
       >
         #
@@ -26,7 +26,7 @@
         class="title-artist"
         data-testid="header-title"
         role="button"
-        title="Sort by title"
+        title="按歌名排序"
         @click="sort('title')"
       >
         标题
@@ -39,7 +39,7 @@
         class="album"
         data-testid="header-album"
         role="button"
-        title="Sort by album"
+        title="按专辑排序"
         @click="sort('album_name')"
       >
         专辑
@@ -52,7 +52,7 @@
         class="time"
         data-testid="header-length"
         role="button"
-        title="Sort by song duration"
+        title="按时长排序"
         @click="sort('length')"
       >
         时间

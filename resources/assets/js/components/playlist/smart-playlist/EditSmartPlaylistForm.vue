@@ -12,7 +12,7 @@
             <input
               v-model="mutablePlaylist.name"
               v-koel-focus name="name"
-              placeholder="Playlist name"
+              placeholder="歌单名称"
               required
               type="text"
             >

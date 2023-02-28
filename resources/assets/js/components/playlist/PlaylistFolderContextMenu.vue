@@ -3,7 +3,7 @@
     <template v-if="folder">
       <template v-if="playable">
         <li @click="play">播放所有</li>
-        <li @click="shuffle">随机播放</li>
+        <li @click="shuffle">随机排序播放</li>
         <li class="separator" />
       </template>
       <li @click="createPlaylist">新建歌单</li>

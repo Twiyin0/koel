@@ -32,7 +32,7 @@
             class="btn-shuffle-all"
             data-testid="btn-shuffle-all"
             orange
-            title="Shuffle all songs"
+            title="随机排序所有歌曲"
             @click.prevent="shuffle"
           >
             <icon :icon="faRandom" fixed-width />

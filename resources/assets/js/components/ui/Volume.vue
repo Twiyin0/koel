@@ -5,7 +5,7 @@
       v-koel-tooltip.top
       role="button"
       tabindex="0"
-      title="Unmute"
+      title="取消静音"
       @click="unmute"
     >
       <icon :icon="faVolumeMute" fixed-width />
@@ -16,7 +16,7 @@
       v-koel-tooltip.top
       role="button"
       tabindex="0"
-      title="Mute"
+      title="静音"
       @click="mute"
     >
       <icon :icon="level === 'discreet' ? faVolumeLow : faVolumeHigh" fixed-width />
@@ -28,7 +28,7 @@
       max="10"
       role="slider"
       step="0.1"
-      title="Volume"
+      title="音量"
       type="range"
       @change="broadcastVolume"
       @input="setVolume"

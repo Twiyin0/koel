@@ -17,7 +17,7 @@
           <span v-if="shouldNotifyNewVersion" class="new-version-notification" />
         </button>
 
-        <button v-koel-tooltip.left title="Log out" type="button" @click.prevent="logout">
+        <button v-koel-tooltip.left title="注销" type="button" @click.prevent="logout">
           <icon :icon="faArrowRightFromBracket" />
         </button>
 

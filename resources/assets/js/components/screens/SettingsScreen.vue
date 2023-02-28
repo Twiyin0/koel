@@ -73,8 +73,8 @@ const save = async () => {
 
 const confirmThenSave = async () => {
   if (shouldWarn.value) {
-    await showConfirmDialog('Changing the media path will essentially remove all existing data – songs, artists, \
-          albums, favorites, everything – and empty your playlists! Sure you want to proceed?', 'Confirm')
+    await showConfirmDialog('修改音乐库目录会删掉原有的数据，比如歌曲，艺术家 \
+          专辑，喜欢的音乐等所有东西，并且会清空你的歌单，你确定要继续嘛', '警告')
     && await save()
   } else {
     await save()

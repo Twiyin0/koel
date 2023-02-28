@@ -8,7 +8,7 @@
     <a
       class="logout control"
       role="button"
-      title="Log out"
+      title="注销"
       @click.prevent="logout"
     >
       <icon :icon="faSignOutAlt" />

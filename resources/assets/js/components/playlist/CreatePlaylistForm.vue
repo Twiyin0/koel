@@ -27,7 +27,7 @@
           >
         </label>
         <label class="folder">
-          歌单
+          收藏夹
           <select v-model="folderId">
             <option :value="null" />
             <option v-for="folder in folders" :key="folder.id" :value="folder.id">{{ folder.name }}</option>

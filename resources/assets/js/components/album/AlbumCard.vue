@@ -21,7 +21,7 @@
         role="button"
         @click.prevent="shuffle"
       >
-        随机播放
+        随机排序
       </a>
       <a
         v-if="allowDownload"
